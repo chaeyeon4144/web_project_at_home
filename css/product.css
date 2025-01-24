@@ -39,7 +39,15 @@
   object-fit: cover;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.26);
   position: relative;
+  transition: all 0.5s;
 }
+.card_section:hover {
+  transform: scale(0.95);
+}
+.card_section:hover .card_text {
+  font-weight: bold;
+}
+
 .card_img {
   width: 100%;
   position: relative;
@@ -78,8 +86,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Rectangle\ 21.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 21.png");
   background-size: cover;
   opacity: 0;
 }
@@ -90,8 +97,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Rectangle\ 22.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 22.png");
   background-size: cover;
   opacity: 0;
 }
@@ -102,8 +108,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Rectangle\ 23.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 23.png");
   background-size: cover;
   opacity: 0;
 }
@@ -115,8 +120,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Rectangle\ 21.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 21.png");
   background-size: cover;
   opacity: 1;
   z-index: 9999;
@@ -127,8 +131,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Rectangle\ 22.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 22.png");
   background-size: cover;
   opacity: 1;
   z-index: 9999;
@@ -139,11 +142,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/Rectangle\ 23.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Rectangle\ 23.png");
   background-size: cover;
   opacity: 1;
   z-index: 9999;
+  /* 마우스를 올렸을때 */
 }
 /* 카드 섹션 안 장바구니 아이콘 */
 .card_shopping_plus {
@@ -151,13 +154,16 @@
   height: 8%;
   position: absolute;
   top: 6%;
-  right: 8%;
+  right: 5%;
   z-index: 9999999;
-  background-color: rgba(225, 225, 2254, 0.26);
-  border-radius: 50%;
 }
+
 .card_shopping_plus > a > img {
   width: 70%;
   height: 70%;
   padding-left: 8%;
+}
+/* 카드 섹션 안 장바구니 아이콘 호버 */
+.card_shopping_plus:hover {
+  cursor: pointer;
 }
